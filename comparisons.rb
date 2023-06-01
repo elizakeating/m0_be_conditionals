@@ -106,15 +106,21 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
+puts loves_to_play && is_a_puppy
 
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: For my final line of code I followed the pattern of the variable name comparisons so it gave me an error saying that there was an undefined local variable or method `is_a_puppy`. This is because there is no previous variable named is_a_puppy and so the line can't compare the two.
+#
+# A way to use our already predefined variables that could determine if the dog is a puppy is to come up with what age we think a puppy is, and then compare that to the age variable, but this wouldn't be under a variable is_a_puppy unless assigned to it
+# ex: puts loves_to_play && age < 2
+# would print true
+
